@@ -1,6 +1,6 @@
-# Next.js ChatGPT Tutorial Documentation
+# Final Year Project Documentation
 > This Is Final Year Project Based On Blockchain And AI
-<img alt="Screenshot" src="./public/img/screenshot.jpg" height="75%" width="75%"/>
+<img alt="Screenshot" src="./public/img/screenshot.png" height="75%" width="75%"/>
 
 
 ## Overview
