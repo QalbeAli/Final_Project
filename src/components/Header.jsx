@@ -2,12 +2,20 @@ import ethlogo from "../../public/ethlogo.png"
 import { connectWallet } from '../utils/Adulam'
 import { truncate, useGlobalState } from '../store'
 import Image from "next/image"
-
+import Link from "next/link"
 const Header = () => {
   const [connectedAccount] = useGlobalState('connectedAccount')
 
   return (
+    <>
+    <Link href="/">
+    <div className='flex justify-center items-center font-medium p-2 text-white text-xl'>
+        <h2>Go To Home</h2>
+      </div>
+    </Link>
+
     <nav className="w-4/5 flex md:justify-center justify-between items-center py-4 mx-auto">
+      
       <div className="flex flex-row justify-start items-center md:flex-[0.5] flex-initial">
         <Image className="w-8 cursor-pointer" src={ethlogo} alt="Adulam Logo" />
         <span className="text-white text-2xl ml-2">Final_Project</span>
@@ -42,6 +50,8 @@ const Header = () => {
         </button>
       )}
     </nav>
+    </>
+
   )
 }
 

@@ -11,10 +11,15 @@ import Loading from '../components/Loading'
 const App = () => {
   const [nfts] = useGlobalState('nfts')
 
-  useEffect(async () => {
-    await isWallectConnected().then(() => console.log('Blockchain Loaded'))
-    await loadNfts()
-  }, [])
+  useEffect(() => {
+    const fetchData = async () => {
+      await isWallectConnected();
+      await loadNfts();
+      console.log('Blockchain Loaded');
+    };
+  
+    fetchData();
+  }, []);
 
   return (
     <div className="min-h-screen">
