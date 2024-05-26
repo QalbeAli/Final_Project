@@ -32,20 +32,20 @@ const Artworks = ({ artworks }) => {
                 bg-white rounded-lg item w-64 h-64 object-contain 
                 bg-no-repeat bg-cover overflow-hidden mr-2 mb-2 cursor-pointer
                 transition-all duration-75 delay-100 hover:shadow-[#bd255f]"
-                style={{ backgroundImage: `url(https://i.seadn.io/s/raw/files/5322c2449aa45bade985f7587765ce8f.webp?auto=format&dpr=1&w=1000)` }}
+                style={{ backgroundImage: `url(https://media.licdn.com/dms/image/D4E12AQEMkfyzABbJJA/article-cover_image-shrink_720_1280/0/1708611148395?e=2147483647&v=beta&t=vm1XFOlNSZWGtMMuhCD-C4yzi-yrWTs6bNU5R555Lng)` }}
             >
               <div
                 className="absolute bottom-0 left-0 right-0
                   flex flex-row justify-between items-center
                   label-gradient p-2 w-full text-white text-sm"
               >
-                <p>{`My NFT #${nft.id}`}</p>
+                <p>{`NFT #${nft.id}`}</p>
                 <div className="flex justify-center items-center space-x-2">
         
                   <Image
                     className="w-5 cursor-pointer"
                     src={ethlogo}
-                    alt={`My NFT collection #` + nft.id}
+                    alt={`NFT collection #` + nft.id}
                   />
                   {nft.cost}
                 </div>

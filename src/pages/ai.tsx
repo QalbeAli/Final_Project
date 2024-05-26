@@ -9,7 +9,7 @@ const IndexPage: NextPage = () => {
     <MessagesProvider>
       <Link href="/">
       <div className='flex justify-center items-center font-medium bg-gray-500 text-white text-2xl'>
-        <h2>Go To Home</h2>
+        <h2>Go Back</h2>
       </div>
       </Link>
      
